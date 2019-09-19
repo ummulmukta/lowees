@@ -5,9 +5,9 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
 		features="Feature",
-		glue="com.stepdef"
+		glue="com.stepdef",
 		//tags="@mhover"
-		//tags="@log,@mhover"
+		tags="@log,@mhover"
 		//tags="@drp"
 		)
 

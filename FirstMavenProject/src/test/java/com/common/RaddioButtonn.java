@@ -1,5 +1,6 @@
 package com.common;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -9,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class RaddioButtonn {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "./Drivver/chromedriver.exe");
 		driver = new ChromeDriver();
@@ -25,6 +26,7 @@ public class RaddioButtonn {
 		System.out.println(b);
 		boolean c=custom.isDisplayed();
 			System.out.println(c);
+			ScreenShott.ScreenS(driver,"radio button");
 		driver.quit();
 		
 		

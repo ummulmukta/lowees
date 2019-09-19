@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="51661" started-at="2019-08-28T13:44:59Z" finished-at="2019-08-28T13:45:51Z">
+  <suite name="Default suite" duration-ms="57633" started-at="2019-09-18T14:00:08Z" finished-at="2019-09-18T14:01:05Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.Testrun@53b32d7]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="51661" started-at="2019-08-28T13:44:59Z" finished-at="2019-08-28T13:45:51Z">
+    <test name="Default test" duration-ms="57633" started-at="2019-09-18T14:00:08Z" finished-at="2019-09-18T14:01:05Z">
       <class name="com.testrunner.Testrun">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testrunner.Testrun@53b32d7]" name="setUpClass" is-config="true" duration-ms="323" started-at="2019-08-28T13:44:59Z" finished-at="2019-08-28T13:45:00Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testrunner.Testrun@53b32d7]" name="setUpClass" is-config="true" duration-ms="212" started-at="2019-09-18T14:00:08Z" finished-at="2019-09-18T14:00:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.Testrun@53b32d7]" name="feature" duration-ms="21721" started-at="2019-08-28T13:45:00Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-28T13:45:22Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.Testrun@53b32d7]" name="feature" duration-ms="39819" started-at="2019-09-18T14:00:08Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-09-18T14:00:48Z">
           <params>
             <param index="0">
               <value>
@@ -24,22 +24,26 @@
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=76.0.3809.100)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#ap_email"}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-9445UGT', ip: '192.168.1.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.12 (220b19a666554..., userDataDir: C:\Users\farha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8e9f4121ce37ceddf4789b09cebf9c81]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.12 (220b19a666554..., userDataDir: C:\Users\farha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64360}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b456fc2fcf14f4c7e7a0bee1015f8bf8
+*** Element info: {Using=id, value=ap_email}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=76.0.3809.100)
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#ap_email"}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-9445UGT', ip: '192.168.1.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.12 (220b19a666554..., userDataDir: C:\Users\farha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8e9f4121ce37ceddf4789b09cebf9c81
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.12 (220b19a666554..., userDataDir: C:\Users\farha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64360}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b456fc2fcf14f4c7e7a0bee1015f8bf8
+*** Element info: {Using=id, value=ap_email}
 at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -67,13 +71,15 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=76.0.3809.100)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#ap_email"}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-9445UGT', ip: '192.168.1.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.12 (220b19a666554..., userDataDir: C:\Users\farha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8e9f4121ce37ceddf4789b09cebf9c81
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.12 (220b19a666554..., userDataDir: C:\Users\farha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64360}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b456fc2fcf14f4c7e7a0bee1015f8bf8
+*** Element info: {Using=id, value=ap_email}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -84,17 +90,19 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-at com.stepdef.SigninStep.enter_password(SigninStep.java:35)
-at ✽.And enter password(Feature.feature:7)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.stepdef.SigninStep.enter_Username(SigninStep.java:29)
+at ✽.And Enter Username(Feature.feature:6)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.Testrun@53b32d7]" name="feature" duration-ms="13765" started-at="2019-08-28T13:45:22Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-28T13:45:35Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.Testrun@53b32d7]" name="feature" duration-ms="17489" started-at="2019-09-18T14:00:48Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-09-18T14:01:05Z">
           <params>
             <param index="0">
               <value>
@@ -105,18 +113,7 @@ at ✽.And enter password(Feature.feature:7)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testrunner.Testrun@53b32d7]" name="feature" duration-ms="15653" started-at="2019-08-28T13:45:35Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-28T13:45:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[dopdown functionality test]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testrunner.Testrun@53b32d7]" name="tearDownClass" is-config="true" duration-ms="21" started-at="2019-08-28T13:45:51Z" finished-at="2019-08-28T13:45:51Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testrunner.Testrun@53b32d7]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2019-09-18T14:01:05Z" finished-at="2019-09-18T14:01:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
