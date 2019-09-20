@@ -1,4 +1,4 @@
-package com.utility;
+package com.common;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -10,12 +10,12 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-public class ExcelReuse {
+public class getSpecificdataExcel {
 	public static FileInputStream fis;
 	public static Workbook wb;
 	public static Sheet a;
 
-	public static String dataRead(String excelpath, String sh,int col) {
+	public static String dataRead(String excelpath, String sh,int r,int col) {
 
 		try {
 			fis = new FileInputStream(excelpath);
@@ -36,18 +36,9 @@ public class ExcelReuse {
 			e.printStackTrace();
 		}
 		a = wb.getSheet(sh);
-
-		 int totalrow=a.getLastRowNum();
-
-		 for(int i=0;i<=totalrow;i++) {
-		String result=a.getRow(i).getCell(col).getStringCellValue();
+		String result=a.getRow(r).getCell(col).getStringCellValue();
 		
 		 System.out.println(result);
-		// double resultnumeric=a.getRow(i).getCell(2).getNumericCellValue();
-		// System.out.println(resultnumeric);
+		return result;
 		 }
-		return sh;
-
-	}
-
 }
