@@ -13,7 +13,7 @@ public static void ScreenS(WebDriver driver,String ss) throws IOException{
 	
 	TakesScreenshot tkss = (TakesScreenshot)driver;
 	File fl = tkss.getScreenshotAs(OutputType.FILE);
+	//FileUtils.copyFile(fl, new File(ss+".png"));
 	FileUtils.copyFile(fl, new File(ss+".png"));
-	
 }
 }

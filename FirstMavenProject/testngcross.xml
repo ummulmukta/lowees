@@ -2,15 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="chrometest">
-  <parameter name="broowsser" value="chrome"/>
+  <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.common.BaseNewCross"/>
+      <class name="com.common.CrosBrowsserBase"/>
     </classes>
   </test> <!-- Test -->
   <test name="geckotest">
-  <parameter name="broowsser" value="gecko"/>
+  <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.common.BaseNewCross"/>
+      <class name="com.common.CrosBrowsserBase"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

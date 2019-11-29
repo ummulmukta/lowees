@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testrunner.Testrun">
+      <class name="com.common.CrosBrowserTestindExpedia">
         <methods>
-          <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="ss"/>
         </methods>
-      </class> <!-- com.testrunner.Testrun -->
+      </class> <!-- com.common.CrosBrowserTestindExpedia -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

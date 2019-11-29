@@ -8,6 +8,7 @@ import org.testng.Assert;
 
 import com.common.Base;
 import com.common.ScreenShott;
+import com.common.Sdrfh;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -41,6 +42,12 @@ public class Mousehoverstep extends Base{
 		//right click,vew page source,copy from title
 		//find page title from head tag in html page
 		//click on * right corner of url add bookmark and copy
+		
+		Sdrfh.scshot(driver,"username");
+		
+		
+		
+		
 		
 	}
 

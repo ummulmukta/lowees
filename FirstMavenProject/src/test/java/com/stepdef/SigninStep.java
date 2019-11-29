@@ -1,32 +1,39 @@
 package com.stepdef;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.common.Base;
+import com.pageobject.pagechild;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class SigninStep extends Base {
+	
+	pagechild k;
 	@Given("^Go to home page$")
+	
 	public void go_to_home_page() throws Throwable {
-	   driver=getdriver();
-	   
-	   
+	   getdriver();
+	   k=PageFactory.initElements(driver,pagechild.class);
+	
 	}
 
 	@Given("^Click on signin button$")
 	public void click_on_signin_button() throws Throwable {
 	  // driver.findElement(By.xpath("//span[contains(text(),'Hello, Sign in')]")).click();
 	   //driver.findElement(By.xpath("//span[contains(text(),'Hello, Sign in')]")).submit();
-	   driver.findElement(By.xpath("//span[contains(text(),'Hello, Sign in')]")).click();
+	   //driver.findElement(By.xpath("//span[contains(text(),'Hello, Sign in')]")).click();
+		k.getA();
 	}
 
 	@Given("^Enter Username$")
 	public void enter_Username() throws Throwable {
 	  // driver.findElement(By.id("//input[@id='ap_email']")).sendKeys("rtfghj");
-	   driver.findElement(By.id("ap_email")).sendKeys("login_practice@yahoo.com");
+	  // driver.findElement(By.id("ap_email")).sendKeys("login_practice@yahoo.com");
 	  // driver.findElement(By.xpath("")).sendKeys("");
 	}
 
