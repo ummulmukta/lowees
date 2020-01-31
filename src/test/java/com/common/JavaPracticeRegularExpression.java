@@ -27,18 +27,29 @@ public class JavaPracticeRegularExpression {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		//driver.quit();
 		WebElement a=driver.findElement(By.xpath("(//span[@class='inline-amount-titles'])[5]"));
+		
 		//By byXpath = By.xpath("//*[@id='content']/table/tbody/tr/td[2]");
-		//List<WebElement> links = driver.findElements(By.xpath("//span[@class='inline-amount-titles']"));
+		List<WebElement> links = driver.findElements(By.xpath("//span[@class='inline-amount-titles']"));
+System.out.println(links.size());
+
+for(int i=0;i<links.size();i++) {
+	List<WebElement> st=links;
+	System.out.println(st.toString());
+}
 
 		//List<String> texts = links.stream().map(WebElement::getText).collect(Collectors.toList());
+//List<String> texts = links.stream().map(WebElement::getText).collect(Collectors.toList());
 		//System.out.println(texts);
 		String s=a.getText();
+		System.out.println(s);
+		
+		
 		/*
 		 * String[] ss=s.split(","); ArrayList<String>set=new ArrayList<>(); for(String
 		 * sss:ss) { set.add(sss); } System.out.println(set);
 		 */
-		
-		String reg="(\\d{1} \\D{6}, \\d{1} \\D{4})";
+		String reg="(\\d{1} \\D{6},)";
+		//String reg="(\\d{1} \\D{6}, \\d{1} \\D{4})";
 		//String reg="(\\d{1} [a-zA-Z]{6}, \\d{1} [a-zA-Z]{4})";
 		Pattern p=Pattern.compile(reg);
 		Matcher m=p.matcher(s);
